@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Unit3_Chair_BriannaWhetten.ma
-//Last modified: Thu, May 16, 2024 11:20:33 PM
+//Last modified: Thu, May 16, 2024 11:27:01 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,22 +11,23 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "D1C61702-4B6A-B486-4063-F4BD9FA25B03";
+fileInfo "UUID" "106C300C-4576-BF48-C771-25A7728F3E67";
 createNode transform -s -n "persp";
 	rename -uid "BF93FF7A-425E-544D-27C5-849F04DDE3AD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.5909912495375287 4.7296706736953373 7.0703763553156511 ;
-	setAttr ".r" -type "double3" -19.799999999997738 -22.400000000176782 0 ;
-	setAttr ".rpt" -type "double3" 1.8103887394397159e-16 -2.3406337262864851e-17 6.8573807613787666e-16 ;
+	setAttr ".t" -type "double3" -5.3288505930052903 3.3865897440454611 7.86349094120526 ;
+	setAttr ".r" -type "double3" -9.4643896827548488 -33.400000000000311 0 ;
+	setAttr ".rp" -type "double3" 1.3877787807814457e-16 2.2204460492503131e-16 0 ;
+	setAttr ".rpt" -type "double3" 3.2112283511572231e-16 -1.1690891976196729e-16 6.6145412415226086e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "61CAEE4D-4C2F-AA46-BD71-E8ABE1E27E84";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 8.2053569402480555;
+	setAttr ".coi" 9.8455499621670661;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.017160865819190574 1.7676408664746965 -0.24416100442353272 ;
+	setAttr ".tp" -type "double3" 0.017160865819191962 1.7676408664746974 -0.24416100442353406 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "F4EA9C31-4774-8759-06C1-DAAC8975713E";
@@ -640,7 +641,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 	setAttr ".output_mode" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "45CA03A7-4C20-AD9F-A2AF-FFB307F7F268";
+	rename -uid "633AB6CC-4D4C-B833-6639-B1856A3ACF58";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
