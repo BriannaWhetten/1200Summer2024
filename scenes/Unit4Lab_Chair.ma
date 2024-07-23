@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Unit4Lab_Chair.ma
-//Last modified: Tue, Jul 23, 2024 02:36:10 PM
+//Last modified: Tue, Jul 23, 2024 02:37:17 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "B9B8C157-476F-2070-FAE4-65ABBAF4101F";
+fileInfo "UUID" "8B21DCF4-4E72-C835-8AD7-8386D5D78229";
 createNode transform -s -n "persp";
 	rename -uid "802FE09F-40E1-53E1-F964-0E81B24C0C84";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.899798258210245 6.8443708486318346 9.9660157564377521 ;
-	setAttr ".r" -type "double3" -10.800000000000693 -1486.7999999998833 -1.1615543524728383e-15 ;
+	setAttr ".t" -type "double3" -8.2558923752307329 8.3487621602563689 12.493303995957543 ;
+	setAttr ".r" -type "double3" -18.000000000001378 -1473.5999999998787 -9.5463848381015374e-16 ;
 	setAttr ".rpt" -type "double3" -1.1203401546029194e-17 -3.5120013064080878e-17 -2.0463405946626117e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD58E3A9-49A1-59E6-674E-418F11DF65B6";
@@ -1494,7 +1494,7 @@ createNode polyExtrudeFace -n "polyExtrudeFace7";
 	setAttr ".cbn" -type "double3" -1.4555863508089322 3.4511127463281972 -1.4957510580228068 ;
 	setAttr ".cbx" -type "double3" 1.4794447290615773 3.4511127463281972 1.1613905899168 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "02032C78-4F09-25C0-45DB-80A75F7188B6";
+	rename -uid "ACE7B6F0-47AE-248E-12E4-E2A720571227";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
